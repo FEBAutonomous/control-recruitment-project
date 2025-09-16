@@ -118,7 +118,6 @@ Whatever medium you think is best for this is fine; we're not particularly conce
 
 You will also submit a zip file of your finalized code.
 
-
 ## Resources
 outside of [office hours](https://docs.google.com/spreadsheets/d/1ifnzajpgu3X9_jV493kc64A2R6CjR8UqbLQ9SasroNY/edit?gid=1214868707#gid=1214868707), here are a couple resources to give various bits of background on controls:
 
@@ -132,3 +131,17 @@ outside of [office hours](https://docs.google.com/spreadsheets/d/1ifnzajpgu3X9_j
 - [Intro to Robot Motion: Theory, Algorithms, and Implementations](https://reid.xz.ax/swbible) is way too long and in depth, but appendix J is a good primer on linear control.
 - [Purdue SigBots](https://wiki.purduesigbots.com/software/control-algorithms) has a nice wiki.
 - [WPIlib](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/state-space/index.html) may be familiar to you and has a good controls primer.
+
+
+## Deliverables/Completion Criteria
+
+To comply with Blue & Gold guidelines, we must provide a set of minimum criteria which, if completed, guarantee that you can work on a technical project. These are those criteria.
+
+Here, "controller" just refers to your entire solution, not just the control portion (ie, distinct planners or dynamics models or whatever count as distinct controllers).
+
+- Implement at least 2 different controllers and compare the results to make quantitatively motivated decisions on the best option.
+- Implement at least one controller which can complete a lap without exceeding the net acceleration limits or hitting any cones.
+- Provide some proof of safety (with respect to the aforementioned acceleration and cone collision constraints) for your controller. Does not need to be fully valid (ie, can use approximations like linearization and convexification), but any such approximations must be well motivated. (really this criteria is just 'provide some justification for why your controller shouldn't violate any of the constraints')
+- Understand the math behind all implemented controllers and be able to provide first principles (or at least quantitative data-driven) reasoning for why they chose the ones they did.
+- Provide reasoning for how setpoints are chosen for the controller (ie, provide motivation for how planning was done)
+
