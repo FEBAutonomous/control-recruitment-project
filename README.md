@@ -5,7 +5,7 @@
 
 The goal of this project is to design and implement something to drive a car around a track while avoiding cones.
 
-More specifically, you must write a function that takes in a single argument (the state of the car) $[x \, y \, \phi \, v \, \theta ]$ and returns a single control command $[a \, \dot{\theta}]$.
+More specifically, you must write a function that takes in a single argument (the state of the car) $[x \, y \, \phi \, v \, \theta ]^\top$ and returns a single control command $[a \, \dot{\theta}]^\top$.
 
 These variables represent the following quantities:
 - $x$ and $y$ are the position of the car, in meters.
@@ -21,7 +21,7 @@ There are also the following constraints:
 | -------------- | ----------- | ----------- |
 | $\theta$       | -0.7        | 0.7         |
 | $\dot{\theta}$ | -1.0        | 1.0         |
-| $a$            | 10          | -4          |
+| $a$            | -10         |  4          |
 
 The only other important numbers that you do not get to choose are:
 - the wheelbase (distance between front and rear wheels) is 1.58 meters.
