@@ -9,7 +9,7 @@ More specifically, you must write a function that takes in a single argument (th
 
 These variables represent the following quantities:
 - $x$ and $y$ are the position of the car, in meters.
-- $\phi$ is the heading of the car, in radians (zero is pointing directly left)
+- $\phi$ is the heading of the car, in radians (zero is pointing directly right)
 - $v$ is the velocity of the car, in meters per second.
 - $\theta$ is the angle of the front wheels, in radians.
 - $a$ is the requested acceleration for the car. Think of this more as the normalized force $\frac{F}{m}$ - the car is subject to aerodynamic drag and will not keep accelerating infinitely.
@@ -135,13 +135,13 @@ outside of [office hours](https://docs.google.com/spreadsheets/d/1ifnzajpgu3X9_j
 
 ## Deliverables/Completion Criteria
 
-To comply with Blue & Gold guidelines, we must provide a set of minimum criteria which, if completed, guarantee that you can work on a technical project. These are those criteria.
+Here's what we're looking for, more concretely:
 
 Here, "controller" just refers to your entire solution, not just the control portion (ie, distinct planners or dynamics models or whatever count as distinct controllers).
-
-- Implement at least 2 different controllers and compare the results to make quantitatively motivated decisions on the best option.
+- Design your controller to optimize for lap time subject to the net acceleration and cone collision constraints. You may add additional constraints (like implementation complexity, runtime, etc) as you see fit. All justification for design decisions should be tied back to these goals and constraints.
 - Implement at least one controller which can complete a lap without exceeding the net acceleration limits or hitting any cones.
-- Provide some proof of safety (with respect to the aforementioned acceleration and cone collision constraints) for your controller. Does not need to be fully valid (ie, can use approximations like linearization and convexification), but any such approximations must be well motivated. (really this criteria is just 'provide some justification for why your controller shouldn't violate any of the constraints')
-- Understand the math behind all implemented controllers and be able to provide first principles (or at least quantitative data-driven) reasoning for why they chose the ones they did.
+- Compare that controller in some rigorous way to another.
+- Provide some claim of safety (with respect to the aforementioned acceleration and cone collision constraints) for your controller. Does not need to be a fully valid proof (ie, can use approximations like linearization or convexification), but any such approximations should be stated and well motivated. (really this criteria is just 'provide some justification for why your controller shouldn't violate any of the constraints')
+- Understand the math behind all implemented controllers enough to be able to provide first principles (or at least quantitative data-driven) reasoning for why you chose the one you did.
 - Provide reasoning for how setpoints are chosen for the controller (ie, provide motivation for how planning was done)
 
