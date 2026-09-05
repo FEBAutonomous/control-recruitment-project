@@ -3,8 +3,7 @@ from simulator import Simulator, centerline
 
 sim = Simulator()
 
-#  HINT: centerline_func(s) -> [x,y] 
-#  where s is arc length of centerline
+
 
 def controller(x):
     """controller for a car
@@ -15,6 +14,11 @@ def controller(x):
     Returns:
         ndarray: numpy array of shape (2,) containing [fwd acceleration, steering rate]
     """
+    xpos   = x[0]                   # current x position
+    ypos   = x[1]                   # current y position
+    phi    = np.mod(x[2], 2*np.pi)  # current heading (radians)
+    v      = x[3]                   # current velocity
+    theta   = x[4]                  # current steering angle
 
     
     
