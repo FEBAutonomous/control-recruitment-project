@@ -1,5 +1,4 @@
-> [!NOTE]
-> I have made changes to the code as of 4:45pm on 9/10. I don't anticipate any further code changes, but I will be updating the readme with more resources and information regularly.
+
 
 # FEB Autonomous Recruitment Project
 
@@ -119,7 +118,7 @@ Whatever medium you think is best for this is fine; we're not particularly conce
 You will also submit a zip file of your finalized code.
 
 ## Resources
-outside of [office hours](https://docs.google.com/spreadsheets/d/1ifnzajpgu3X9_jV493kc64A2R6CjR8UqbLQ9SasroNY/edit?gid=1214868707#gid=1214868707), here are a couple resources to give various bits of background on controls:
+outside of [office hours](https://docs.google.com/spreadsheets/d/1B-L8bMBI9LduR22nH3wqY7b9pkvPdJxPRgXONi-lw7A/edit?gid=1214868707#gid=1214868707), here are a couple resources to give various bits of background on controls:
 
 - The Matlab control videos provide a very good introduction to the idea of control and control theory. 
   - [control intro](https://youtu.be/lBC1nEq0_nk?si=m6OHT0HWrKCxY3qO)
