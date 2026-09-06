@@ -106,7 +106,7 @@ I'm not sure if `sim.animate()` will work in colab, but if it doesn't, you can j
 
 ## Presentation & Submission
 
-When you present your project, you will have roughly 10-15 minutes to showcase everything you've done in just these two weeks (please do not show us anything not directly related to this project). The goal is to show:
+When you present your project, you will have roughly 10-15 minutes to showcase everything you've done (please do not show us anything not directly related to this project). The goal is to show:
 - *why* you did what you did
     - how you made sure your controller is safe (won't hit any cones or exceed the acceleration limits)
     - what things you optimized for & why you think your controller is the right choice given those priorities
